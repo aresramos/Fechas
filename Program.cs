@@ -30,7 +30,15 @@ namespace ConsoleApp18
             DateTime fechanacimiento = Convert.ToDateTime(Console.ReadLine());
             int edad = fechaactual.Year -fechanacimiento.Year;
 
-            Console.ReadKey();
+            if (usuario == "Ares" && password=="123" && edad>=18 )
+            {
+                Console.WriteLine("Cumples los requisitos");
+            }
+            else
+            {
+                Console.WriteLine("No cumples los requisitos ");
+            }
+                Console.ReadKey();
         }
     }
 }
